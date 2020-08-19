@@ -1,1 +1,1 @@
-# showhorses
+# show-restaurant
