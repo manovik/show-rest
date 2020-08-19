@@ -1,0 +1,133 @@
+@import 'vars';
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Sintony', sans-serif;
+  font-size: 14px;
+  color: #5c6369;
+}
+
+.glob-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.glob-content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #5c6369;
+}
+
+input,
+button {
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  max-width: 200px;
+  min-width: 150px;
+  max-height: 50px;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: $acc;
+  padding: 17px 10px 19px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;  
+  border: 1px solid $acc;
+  transition: all .2s;
+  overflow: hidden;
+  &:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(254, 161, 0, 0.745);
+    border: 1px solid #000;
+  }
+}
+
+.section-title {
+  @include play;
+  font-size: 35px;
+  color: $title;
+}
+
+.price {
+  color: $acc;
+  @include play;
+  font-weight: 700;
+  font-size: 30px;
+  position: relative;
+  transition: all .4s;
+  &__currency {
+    font-size: 0.6em;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+  }
+}
+
+.burger {
+  height: 40px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  margin-left: 25px;
+  display: none;
+  cursor: pointer;
+  &__line {
+    width: 50px;
+    height: 3px;
+    background-color: $acc;
+    border-radius: 3px;
+  }
+}
+
+.hidden-text {
+  font-size: 0;
+}

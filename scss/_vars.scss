@@ -1,0 +1,15 @@
+$acc: #fea100; // rgb(254, 161, 0);
+$text: #5c6369; // rgba(92, 99, 105, 1);
+$pink: #fe4c8d; // rgba(254, 76, 141, 1);
+$title: #14141d; // rgba(20, 20, 29, 1);
+$no: transparent;
+$bord: #e1e1e1; // for borders
+
+@mixin play {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 700px;
+}
+
+@mixin icon {
+  font-family: 'icomoon';
+}
